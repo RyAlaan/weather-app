@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #424242;
+    /* position: absolute; */
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: rgb(51, 226, 151);
+    background: linear-gradient(
+      135deg,
+      rgba(51, 226, 151, 1) 41%,
+      rgba(8, 172, 176, 1) 100%
+    );
+    width: 75%;
+    max-width: 470px;
+    color: #fff;
+    margin: 90px auto 0;
+    border-radius: 20px;
+    padding: 30px 15px;
+    text-align: center;
+}
+
+.container .input-box {
+    width: 100%;
+    gap: 15px;
+}
+
+.input-box input {
+    width: 70%;
+    border: none;
+    border-radius: 15px;
+    padding: 4px 10px;
+}
+
+.input-box button {
+    width: 15%;
+    max-width: 35px;
+    height: 30px;
+    border-radius: 9999px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.container .detail {
+    padding: 15px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.detail .humidity-percent i,
+.detail .wind-speed i{
+    font-size: 1.7rem;
+}
+
+/* .detail .humidity-percent,
+.detail .wind-speed{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+} */
+
+.not-found {
+    padding: 40px 0;
+    color: dimgray;
+    display: none;
+}
+
+.weather {
+    display: none;
+}
